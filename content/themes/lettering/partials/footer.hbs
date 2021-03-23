@@ -1,0 +1,122 @@
+    <!-- =============================================
+                (00) Start Footer section 
+    ============================================== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="row align-items-center">
+                        <div class="col-sm-2">
+                            {{#if @site.logo}}
+                            <img src="{{@site.logo}}" class="img-fluid" alt="{{@site.title}}">
+                            {{/if}}
+                        </div>
+                        <div class="col-sm-10 text-left">
+                            <p>Rakell Simon 2021, All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-left">
+                    <p>Theme created by Felipe Cabral. Powered by Ghost</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============================================
+                (00) End Footer section 
+    ============================================== -->
+
+
+<!-- Modal -->
+<div class="modal fade join-modal join-modal-form" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Let's talk, join us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="padding: 0 !important;">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                        <iframe src="form.html" style="width: 550px;height: 500px; border: none;" title=""></iframe>                        
+                    <!-- <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Best email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone with country code +(CC)" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <p>Don't worry we won't spam you, we hate it as much as you do.</p>
+                                </div>
+                                <div class="col-lg-4 text-md-right text-left">
+                                    <button type="button" class="btn modal-form-submit" data-toggle="modal" data-target="#thankyouModal">
+                                        Send <i class="icofont-long-arrow-right"></i>
+                                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form> -->
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets/images/form-model.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade join-modal thankyou-modal" id="thankyouModal" tabindex="-1" role="dialog" aria-labelledby="thankyouModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2>We'll get back to you very soon, thank you!</h2>
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets/images/form-model.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal fade join-modal thankyou-modal formSucccess" id="thankyouModals2" tabindex="-1" role="dialog" aria-labelledby="thankyouModalTitle" style="display: block; padding-right: 17px;" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2>We'll get back to you very soon, thank you!</h2>
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets/images/form-model.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

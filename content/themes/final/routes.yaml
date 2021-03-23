@@ -1,0 +1,23 @@
+# for live server
+routes:
+  /signup/: members/signup
+  /signin/: members/signin
+  /account/: members/account
+
+# for local server
+# routes:
+#     /signup/: members\signup
+#     /signin/: members\signin
+#     /account/: members\account
+
+collections:
+  /posts/:
+    permalink: /post/{slug}/
+    template: index
+  /:
+      permalink: /{slug}/
+      template: home
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

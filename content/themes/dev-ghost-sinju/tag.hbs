@@ -1,0 +1,47 @@
+{{!< default}}
+<section class="page-header-area clearfix large-padding pt-5">
+   <div class="container">
+      <div class="row">
+         {{#tag}}
+         {{#if feature_image}}
+         <div class="col-md-6 order-md-12">
+            <div class="right-image">
+               <img class="tag-featured-image" src="{{feature_image}}" alt="{{name}}" />
+            </div>
+         </div>
+         {{/if}}
+         <div class="{{#if feature_image}}col-md-6{{else}}col-md-8{{/if}} order-md-1">
+            <div class="header d-md-flex align-items-center" style="height:100%;">
+               <div class="header-title">
+                  <div class="meta-name">
+                     {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} 
+                  </div>
+                  <h1 class="author-name heading-1 mb-3">{{t "Tag"}} - <span>{{name}}</span></h1>
+                  {{#if description }}
+                  <p>{{description }}</p>
+                  {{/if}}
+               </div>
+            </div>
+         </div>
+         {{/tag}}
+      </div>
+   </div>
+</section>
+<main class="main-content-area section-padding-bottom clearfix">
+   <section class="blog-area blog-variation zigzag-loop">
+      <div class="container infinite-scroll js-grid">
+         {{#foreach posts visibility="all"}}
+         <div class="row post-style1 infinite-post" data-aos="fade-up">
+            {{> "post_loop"}}
+         </div>
+         {{/foreach}}
+      </div>
+      <div class="row">
+         <div class="col">
+            <div class="btn-load text-center">
+               {{pagination}}
+            </div>
+         </div>
+      </div>
+   </section>
+</main>

@@ -1,0 +1,17 @@
+{
+    "name": "lettering",
+    "description": "My course lets you learn lettering and brush calligraphy techniques quickly and easily",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
+    },
+    "author": {
+        "name": "ewebdevs",
+        "email": "naimkst@gmail.com",
+        "url": "https://ewebdevs.com"
+    },
+    "config": {
+        "posts_per_page": 25
+    }
+}

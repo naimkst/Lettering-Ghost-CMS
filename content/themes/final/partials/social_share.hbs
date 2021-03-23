@@ -1,0 +1,14 @@
+<ul class="cbttopshare">
+    <li class="list-inline-item">{{t "Share This"}} :</li>
+	<li class="facebook">
+		<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute=" true "}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="blue"><i class="fa fa-facebook"></i></a>
+	</li>
+	<li class="twitter">
+		<a target="_blank" href="http://twitter.com/share?text={{encode title}}&amp;url={{url absolute=" true "}}" class="paste"><i class="fa fa-twitter"></i></a>
+	</li>
+	<li class="pinterest">
+		<a target="_blank" href="https://pinterest.com/pin/create/button/?{{url absolute="true"}}{{#if feature_image}}&media={{feature_image}}{{/if}}" class="red"><i class="fa fa-pinterest"></i></a>
+	</li>
+</ul>
+
+ 

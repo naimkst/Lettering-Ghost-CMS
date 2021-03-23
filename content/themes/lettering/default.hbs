@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ meta_description }}">
+
+    <title>{{ meta_title }}</title>
+
+    <!-- Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="{{asset "/css/bootstrap.min.css"}}">
+    <!-- Icons -->
+    <link rel="stylesheet" href="{{asset "assets/css/font-awesome.min.css"}}">
+    <link rel="stylesheet" href="{{asset "assets/fonts/icofont/icofont.min.css"}}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="{{asset "assets/css/owl.carousel.min.css"}}">
+    <link rel="stylesheet" href="{{asset "assets/css/owl.theme.default.min.css"}}">
+    <!-- Site Style -->
+    <link rel="stylesheet" href="{{asset "assets/css/style.css"}}">
+    <link rel="stylesheet" href="{{asset "assets/css/responsive.css"}}">
+
+    <!-- Modernizr Js -->
+    <script src="{{asset "assets/vendors/modernizr-js/modernizr.js"}}"></script>
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+{{ ghost_head }}
+
+</head>
+
+<body class="{{body_class}}">
+
+    {{{ body }}}
+
+
+{{> footer }}
+
+    <!-- =============================================
+                   Jquery plugins
+    ============================================== -->
+
+    <script src="{{asset "assets/js/jquery.min.js"}}"></script>
+    <!-- Bootstrap -->
+    <script src="{{asset "assets/js/bootstrap.min.js"}}"></script>
+    <!-- Owl Carousel -->
+    <script src="{{asset "assets/js/owl.carousel.min.js"}}"></script>
+    <!-- main js -->
+    <script src="{{asset "assets/js/scripts.js"}}"></script>
+
+        <script>
+            
+        $(".myform").submit(function(e) {
+            e.preventDefault(); // avoid to execute the actual submit of the form.
+            var form = $(this);
+            var url = form.attr('action');
+            $.ajax({
+                type: "POST",
+                url: "https://docs.google.com/forms/u/5/d/e/1FAIpQLScpfsy-zTkDt3JpDJNFy1BNEf9-YooRJlyEluy-mDXx5Mq-Og/formResponse",
+                data: form.serialize(), // serializes the form's elements.
+                success: function(data)
+                {
+                    alert(data); // show response from the php script.
+                }
+            });
+            $('#thankyouModals2').modal('show');
+            $(".formSucccess").css("z-index", "99999");
+        });
+        </script>
+
+{{ ghost_footer }}
+
+</body>
+</html>

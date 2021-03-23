@@ -1,0 +1,47 @@
+/** * ============================ * 5.0 Typography * ============================ */
+ body{
+     font-size:$primary-font-size;
+     color:$primary-color;
+     font-family:$font-family;
+     overflow-X:hidden;
+	 font-weight:$font-regular;
+     line-height:$p-line-height;
+}
+ h1,h2,h3,h4,h5,h6{
+     color: darken($primary-color, 10%);
+     font-weight:$font-bold;
+	 font-family:$heading-family;
+	 line-height:$heading-line-height;
+     a{
+         color: darken($primary-color, 10%);
+         font-weight:$font-bold;
+    }
+}
+ a{
+     color:$highlight-color;
+     transition:all .2s;
+     &:hover{
+         text-decoration:none;
+         color:$highlight-color;
+         transition:all .1s;
+    }
+}
+ .heading-1 {
+     font-size:$h1-font-size;
+}
+ .heading-2 {
+     font-size:$h2-font-size;
+}
+ .heading-3 {
+     font-size: $h3-font-size;
+}
+ .heading-4 {
+     font-size:$h4-font-size;
+}
+ .heading-5 {
+     font-size:$h5-font-size;
+}
+ .heading-6 {
+     font-size:$h6-font-size;
+}
+ 

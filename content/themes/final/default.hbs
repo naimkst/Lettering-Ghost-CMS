@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{!-- Title --}}
+    <title>{{meta_title}}</title>
+    {{!-- Favicon --}}
+    <link rel="shortcut icon" type="image/ico" href="{{asset "images/favicon.ico"}}">
+    {{!-- Main CSS --}}
+    <link rel="stylesheet" href="{{asset "css/app.min.css"}}">
+    {{!-- Google font --}}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CPlayfair+Display:400,700" rel="stylesheet">
+  <script>
+    var pagination_next_page_number         = '{{ pagination.next }}',
+        pagination_available_pages_number   = '{{ pagination.pages }}',
+        pagination_loading_text             = '{{t "Loading" }}',
+        pagination_more_posts_text          = '{{t "More Posts" }}';
+  </script>
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div class="overlay-loader">
+        <div class="preloader">
+            <div class="lines">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <div class="loading-text">{{t "LOADING"}}</div>
+        </div>
+    </div>
+    {{> "header"}}
+       {{{body}}}
+    {{> "footer"}}
+
+    <script src="{{asset "assets/js/build.min.js"}}"></script>
+    {{ghost_foot}}
+</body>
+</html>

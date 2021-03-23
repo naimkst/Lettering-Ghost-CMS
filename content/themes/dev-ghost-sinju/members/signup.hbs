@@ -1,0 +1,102 @@
+{{!< ../default}}
+
+<main class="site-signup main-content-area  pt-80 pb-80 clearfix wow fadeIn" data-wow-duration="2s">
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="member-page-content.fullwidth">
+                        {{#if @member.paid}}
+
+                        {{!-- Logged in, paying member: Redirect home --}}
+                        <script>window.location = '{{@site.url}}';</script>
+
+                        {{else if @member}}
+
+                        {{!-- Logged in, not paying: Check out --}}
+                        <div class="checkout-form text-center">
+                            <h1 class="checkout-title">{{t "Choose your subscription"}}</h1>
+                            <p>{{t "Unlock full access to "}}{{@site.title}}
+                                {{t "and see the entire library of members-only content & updates"}}</p>
+                            <div class="checkout-box">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="checkout-plan plan-right">
+                                            <header class="checkout-plan-header">
+                                                <h3>{{t "Monthly"}}</h3>
+                                                <span>$</span><strong>{{@price.monthly}}</strong> / {{t "month"}}
+                                            </header>
+                                            <div class="checkout-plan-content">
+                                                <ul>
+                                                    <li>{{t "Full access to all private posts"}}</li>
+                                                    <li>{{t "Regular updates with new content"}}</li>
+                                                    <li>{{t "Support independent publishing"}}</li>
+                                                    <li>{{t "Simple, secure card payment"}}</li>
+                                                </ul>
+                                                <button class="button btn btn-primary btn-style-2"
+                                                    href="javascript:void(0)"
+                                                    data-members-plan="Monthly">{{t "Choose this plan"}}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                         <div class="checkout-plan plan-left">
+                                            <header class="checkout-plan-header">
+                                                <h3>{{t "Yearly"}}</h3>
+                                                <span>$</span><strong>{{@price.yearly}}</strong> / {{t "year"}}
+                                            </header>
+                                            <div class="checkout-plan-content">
+                                                <ul>
+                                                    <li>{{t "Full access to all private posts"}}</li>
+                                                    <li>{{t "Regular updates with new content"}}</li>
+                                                    <li>{{t "Support independent publishing"}}</li>
+                                                    <li>{{t "Simple, secure card payment"}}</li>
+                                                    <li>{{t "One easy payment instead of 12!"}}</li>
+                                                </ul>
+                                                <button class="button btn btn-primary btn-style-2" href="javascript:void(0)"
+                                                    data-members-plan="Yearly">{{t "Choose this plan"}}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        {{else}}
+
+                        {{!-- Not logged in: Sign up --}}
+                        <div class="member-form form-max-width">
+                            <form class="signup-form" data-members-form="signup">
+                                <h1 class="signup-title">{{t "Signup to"}} {{@site.title}}</h1>
+                                <p>{{@site.description}}</p>
+                                <div class="signup-box">
+                                    <input class="form-control" data-members-email type="email"
+                                        placeholder="{{t "Type your email..."}}" required="true" autocomplete="false" />
+                                    <button class="button btn btn-primary btn-style-2" type="submit">
+                                        <span class="button-content">{{t "Continue"}}</span>
+                                        <span class="button-loader">{{> "icons/loader"}}</span>
+                                    </button>
+                                </div>
+                                <p><small>{{t "Already have an account?"}} <a
+                                            href="/signin/">{{t "Sign in"}}</a></small></p>
+                                <div class="message-success"><strong>{{t "Great!"}}</strong>
+                                    {{t "Check your inbox and click the link to confirm your subscription"}}</div>
+                                <div class="message-error">{{t "Please enter a valid email address!"}}</div>
+                            </form>
+                        </div>
+
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style type="text/css">
+    .footer-top.py-5 {
+        display: none;
+    }
+</style>

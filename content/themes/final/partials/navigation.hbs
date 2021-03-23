@@ -1,0 +1,27 @@
+<nav class="highlight">
+    <ul id="main-menu" class="slimmenu">
+            <ul style="display: block;">
+            </ul>
+            <span class="sub-toggle"><i></i></span>
+        </li>
+            <ul style="display: none;">
+              </ul>
+            <span class="sub-toggle"><i></i></span>
+        </li>
+        {{#foreach navigation}}
+        <li><a href="{{url absolute='true'}}">{{label}}</a></li>
+        {{/foreach}}
+        <li>
+            <a href="#" class="search-modal" data-toggle="modal" data-target="#searchmodal"><img
+                    src="{{asset "images/search-icon.png"}}" alt="image" /></a>
+        </li>
+        <li class="membership-icon text-center">
+            {{#if @member}}
+            {{else}}
+          </a>
+            {{/if}}
+            <a href="#" class="search-modal" data-toggle="modal" data-target="#searchmodal"><img
+                    src="{{asset "images/search-icon.png"}}" alt="image" /> Search</a>
+        </li>
+    </ul>
+</nav>

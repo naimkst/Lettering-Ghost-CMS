@@ -1,0 +1,31 @@
+{{#post}}
+<section class="page-header-area clearfix large-padding pt-5">
+ <div class="container">
+	<div class="row">
+	{{#if feature_image}}
+	   <div class="col-md-6 order-md-12">
+		  <div class="right-image">
+			 <img class="post-card-image"
+			srcset="{{img_url feature_image size="s"}} 300w,
+					{{img_url feature_image size="m"}} 600w,
+					{{img_url feature_image size="l"}} 1000w,
+					{{img_url feature_image size="xl"}} 2000w"
+			sizes="(max-width: 1000px) 400px, 700px"
+			src="{{img_url feature_image size="m"}}"
+			alt="{{title}}"/>
+		  </div>
+	   </div>
+	{{/if}}   
+		<div class="{{#if feature_image}}col-md-6{{else}}col-md-8{{/if}} order-md-1">
+		  <div class="header d-md-flex align-items-center" style="height:100%;">
+			 <div class="header-title">
+				<h1 class="author-name heading-1 mb-3"><span>{{title}}</span></h1>
+				<p class="m-0">{{excerpt}}</p>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+ </div>
+</section>
+{{/post}}
+

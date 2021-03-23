@@ -1,0 +1,43 @@
+{{!< default}}
+  {{> "page_header"}}
+      <main class="main-content-area section-padding-bottom clearfix wow fadeIn" data-wow-duration="2s">
+         <section class="blog-area">
+            <div class="container">
+			{{#get "tags" limit="all" include="tags,authors,count.posts"}}
+			 {{#foreach tags}}
+				   <div class="row post-style1" data-aos="fade-up">
+					{{#if feature_image}}
+					  <div class="col-md-6">
+						 <div class="feature-post">
+							<div class="post-thumb">						
+							   <div class="thumb-image">
+							    <a href="{{url}}" class="post-loop-featured-image" style="background-image: url({{ feature_image }})" aria-label="{{ title }}" aria-hidden="true" tabindex="-1">
+									</a>
+								   
+							   </div>
+							</div>
+						 </div>
+					  </div>
+					  {{/if}}
+					  <div class="col-md-6">
+						 <div class="details">
+							<div class="title">
+							   <h2><a href="{{url}}">{{name}} </a></h2>
+							   <p>{{plural count.posts empty=(t "No Posts") singular=(t "A collection of % post") plural=(t "A collection of % posts")}}</p>
+							</div>
+							   {{#if description}}
+								<div class="content">
+									<p>{{description}}</p>
+								</div>
+								{{/if}}
+							<div class="share-option d-md-flex justify-content-between align-items-center">
+							   <div class="btn-more float-left"><a href="{{url}}">{{t "View All Posts"}}</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+							</div>
+						 </div>
+					  </div>
+				   </div>
+			{{/foreach}}
+		   {{/get}}
+    </div>
+    </section>
+</main>

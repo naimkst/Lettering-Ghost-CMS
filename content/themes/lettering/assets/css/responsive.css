@@ -1,0 +1,397 @@
+
+
+/*-------------- Start device screen 1366 --------------*/
+
+@media screen and (max-width: 1366px) {
+    .banner::before {
+        width: 70%;
+    }
+    .banner-right-img {
+        right: 0%;
+    }
+}
+
+/*-------------- Start device screen 1200 --------------*/
+
+@media screen and (max-width: 1200px) {
+    .banner{
+        overflow-x: hidden;
+    }
+    .banner::before {
+        position: absolute;
+        content: '';
+        right: 0;
+    }
+    .banner-content{
+        padding: 0 50px;
+    }
+    .banner-content h1 img{
+        width: 500px;
+    }
+    .course-img-left p{
+        padding-left: 50px;
+    }
+    .course-img-left p::before {
+        left: 5px;
+    }
+    .social-media {
+        margin-top: -55px;
+    }
+}
+
+/*-------------- Start device screen 1024 --------------*/
+
+@media screen and (max-width: 1024px) {
+    .banner-right-img img {
+        width: 335px;
+    }
+    .banner-right-img .line::before {
+        width: 260px;
+        bottom: 9px;
+    }
+    .banner-right-img .line::after {
+        width: 220px;
+        bottom: 4px;
+    }
+}
+
+/*-------------- Start device screen 991 --------------*/
+
+@media screen and (max-width: 991px) {
+    .banner-title::before {
+        z-index: 0;
+    }
+    .banner-right-img{
+        display: none;
+    }
+    .banner::before {
+        width: 80%;
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .header .navbar-nav .nav-item {
+        margin-right: 0;
+    }
+    .header .navbar-nav .nav-item:not(:last-child){
+        margin-bottom: 15px !important;
+    }
+    .navbar-collapse{
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        padding: 30px 50px;
+    }
+
+    .course-img-left img{
+        width: 300px;
+        margin: auto;
+        display: table;
+    }
+    .course-img-left{
+        margin-bottom: 80px;
+    }
+
+    .feedback-card {
+        min-height: 490px;
+    }
+    .section-title h3::before {
+        left: 24.5%;
+    }
+    .student-feedback .section-title h3::before {
+        left: 16.5%;
+    }
+    .works .section-title h3::before {
+        left: 23%;
+    }
+}
+
+/*-------------- Start device screen 768 --------------*/
+
+@media screen and (max-width: 768px) {
+    .banner::before {
+        width: 100%;
+    }
+    .social-media ul {
+        justify-content: center;
+    }
+
+    .header .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header .navbar {
+        padding: 15px 0;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    .section-title h3::before,
+    .down-arrow{
+        display: none;
+    }
+    /* .banner-title::after, */
+    .banner-title::before{
+        display: none;
+    }
+}
+
+/*-------------- Start device screen 480 --------------*/
+
+@media screen and (max-width: 480px) {
+    .course-img-left p::after,
+    .course-img-left p::before{
+        display: none;
+    }
+    .section-title img{
+        width: 280px;
+    }
+    .caouse-module-card .card-header .btn {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    .feedback-card {
+        min-height: 350px;
+    }
+    .feedback-section-enroll-form input {
+        height: 60px;
+    }
+    .btn-default:focus, .btn-default:hover, .btn-default {
+        height: 60px;
+        font-size: 14px;
+    }
+    .banenr-form input{
+        height: 50px;
+    }
+    .banenr-form input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+    .banenr-form input::-moz-placeholder {
+        font-size: 14px;
+    }
+    .banenr-form input:-ms-input-placeholder {
+        font-size: 14px;
+    }
+    .banenr-form input:-moz-placeholder {
+        font-size: 14px;
+    }
+
+    .footer img{
+        display: table;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .footer p{
+        margin-bottom: 15px;
+    }
+
+    .banner-title {
+        font-size: 100px;
+    }
+    .banner-title::before {
+        top: 3px;
+        left: 0;
+    }
+
+
+}
+
+/*-------------- Start device screen 425 --------------*/
+
+@media screen and (max-width: 425px) {
+    .header-right {
+        margin: auto;
+    }
+    .banner-content {
+        padding: 0;
+    }
+    .banenr-form {
+        width: 100%;
+    }
+    .social-media ul li:not(:last-child) {
+        margin-right: 15px;
+    }
+    .course-img-left p {
+        padding-left: 0;
+    }
+    .caouse-module-card .card-body p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .feedback-card p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .feedback-card {
+        display: flex;
+        justify-content: center;
+    }
+    .feedback-section-enroll-form {
+        display: block;
+        margin-top: 80px;
+    }
+    .feedback-section-enroll-form .feedback-section-enroll-form-input {
+        width: 100%;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    .section-title p {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 30px 0 0;
+        text-align: center;
+    }
+    .section-title p::after,
+    .section-title p::before{
+        display: none;
+    }
+    .section-title {
+        margin-bottom: 50px;
+    }
+    .banenr-form input {
+        font-size: 18px;
+    }
+    .feedback-section-enroll-form input::-webkit-input-placeholder {
+        color: #828282;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .feedback-section-enroll-form input::-moz-placeholder {
+        color: #828282;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .feedback-section-enroll-form input:-ms-input-placeholder {
+        color: #828282;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .feedback-section-enroll-form input:-moz-placeholder {
+        color: #828282;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .header-right {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .header-right ul li a.btn-join {
+        font-size: 15px;
+        width: 100px;
+        height: 40px;
+    }
+    .header-right ul li a {
+        font-size: 16px;
+    }
+    .section-title h3 {
+        font-size: 35px;
+    }
+    .student-feedback .section-title h3 {
+        font-size: 36px;
+    }
+    .works .section-title h3 {
+        font-size: 35px;
+    }
+    .banenr-form {
+        margin-bottom: 15px;
+    }
+    .social-media {
+        padding: 10px 0 30px;
+    }
+    .feedback-section-enroll-form input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+    .feedback-section-enroll-form input::-moz-placeholder {
+        font-size: 16px;
+    }
+    .feedback-section-enroll-form input:-ms-input-placeholder {
+        font-size: 16px;
+    }
+    .feedback-section-enroll-form input:-moz-placeholder {
+        font-size: 16px;
+    }
+
+    .join-modal .modal-header .modal-title {
+        font-size: 34px;
+    }
+    .close {
+        top: 20px;
+    }
+
+    .join-modal .form-control{
+        height: 50px;
+        border: #ccc;
+    }
+
+
+}
+
+/*-------------- Start device screen 375 --------------*/
+
+@media screen and (max-width: 375px) {
+
+    .header-right ul li a.btn-join {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .course-img-left p {
+        font-size: 14px;
+    }
+    .caouse-module-card .card-body p:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .course-img-left img {
+        width: 210px;
+    }
+    .social-media ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+    .social-media {
+        padding: 30px 0;
+    }
+    .header-right ul li a.btn-join {
+        height: 40px;
+        font-size: 13px;
+        border-radius: 10px;
+        width: 90px;
+    }
+    
+}
+
+/*-------------- Start device screen 320 --------------*/
+
+@media screen and (max-width: 320px) {
+    .navbar-brand img{
+        width: 50px;
+    }
+    .header-right ul li a.btn-join {
+        height: 35px;
+        font-size: 13px;
+        border-radius: 6px;
+        width: 80px;
+    }
+    .header-right {
+        left: 47%;
+    }
+    .banner-title {
+        font-size: 80px;
+    }
+
+    .works .section-title h3,
+    .student-feedback .section-title h3,
+    .section-title h3 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="banner-slider owl-carousel clearfix">
+  {{#get "posts" filter="featured:true" limit="10" include="authors,tags"}}
+    {{#foreach posts}}
+    <div class="item">
+        <div class="row post-style1 featured-post">
+           {{> "post_loop"}}
+        </div>
+    </div>
+    {{/foreach}}
+   {{/get}}
+</div>

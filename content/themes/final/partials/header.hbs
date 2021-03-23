@@ -1,0 +1,41 @@
+<header class="themeix-header clearfix">
+   <div class="themeix-header-navigation bg-color">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="d-flex justify-content-between themeix">
+                  <div class="themeix-logo">
+                     <a class="themeix-brand" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}"></a>
+                  </div>
+
+                  <div class="header-container d-flex align-self-center highlight">
+                     {{navigation}}
+                  </div>
+                  <ul class="subscribe-btn">
+                     {{#if @member}}
+                     {{else}}
+                    {{/if}}
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="searchmodal" tabindex="-1" role="dialog">
+            <button type="button" class="close" data-dismiss="modal">
+               <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <form action="#" id="gh-search-form" method="get" target="_top">
+                     <div class="input-group">
+                        <input id="gh-search-input" class="w-100" name="q" placeholder="{{t "Search Keyword"}}"
+                           type="text" />
+                     </div>
+                  </form>
+                  <div id="gh-search-results" class="mt-4"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>

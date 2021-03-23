@@ -1,0 +1,31 @@
+{{!< default}}
+{{#post}}
+<section class="page-header-area clearfix pt-5 pb-5">
+ <div class="container">
+	<div class="row"> 
+		<div class="col-md-12">
+		  <div class="header">
+			 <div class="header-title">
+				<h1 class="author-name heading-1 mb-3"><span>{{title}}</span></h1>
+			 </div>
+		  </div>
+	   </div>
+	</div>
+ </div>
+</section>
+{{/post}}
+<main class="main-content-area section-padding-bottom clearfix">
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="entry-content">
+                    {{#post}}
+                      {{content}}  
+                    {{/post}}
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

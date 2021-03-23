@@ -1,0 +1,473 @@
+{{!< default }}
+
+
+    <!-- =============================================
+                (01) Start Header section 
+    ============================================== -->
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                {{#if @site.logo}}
+                    <a class="navbar-brand" href="#"><img src="{{@site.logo}}" class="img-fluid" alt="{{@site.title}}"></a>
+                 {{/if}}
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="header-right">
+                    <ul class="d-flex align-items-center">
+                        <li><a href="/">Log in</a></li>
+                        <li><a class="btn btn-join" href="#" data-toggle="modal" data-target="#joinModal">Join now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =============================================
+                (01) End Header section 
+    ============================================== -->
+
+
+    <!-- =============================================
+                (02) Start banner section 
+    ============================================== -->
+
+    <section class="banner">
+        <div class="banner-right-img">
+            <img src="assets/images/banner-img.png" class="img-fluid" alt="">
+            <span class="line"></span>
+            <h4>Classes by <span>Rakell Simon</span></h4>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="banner-content">
+                        <span class="banner-tagline">Professional Online Course</span>
+                        <h1 class="banner-title">Lettering</h1>
+                        <h3 class="banner-subtitle">is Culture...</h3>
+                        <p>My course lets you learn <span>lettering and brush calligraphy techniques quickly and
+                                easily</span>. Discover decorative lettering, alphabet brush, faux calligraphy, and
+                            decorative elements without leaving home. <a href="void:;">Learn more →</a>
+                        </p>
+                        <form class="banenr-form myform" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScpfsy-zTkDt3JpDJNFy1BNEf9-YooRJlyEluy-mDXx5Mq-Og/formResponse">
+                            <div class="form-group">
+                                <input type="email" name="entry.1873207277" class="forn-control" placeholder="Type your email to enrol now...">
+                                <button type="submit" class="btn banner-form-submit" ><i class="icofont-long-arrow-right"></i></button>
+                            </div>
+                        </form>
+                        <button type="submit" data-toggle="modal" data-target="#joinModal" class="btn btn-form-submit">Talk to me</button>
+                        <ul>
+                            <li>7 day warranty</li>
+                            <li>Safe payments</li>
+                            <li>Access on all devices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="social-media">
+        <div class="down-arrow">
+            <a class="btn" href="#course"><i class="icofont-long-arrow-down"></i></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul>
+                        <li><a href="void:;"><img src="assets/images/Instagram.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="void:;"><img src="assets/images/Facebook.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="void:;"><img src="assets/images/LinkedIN.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="void:;"><img src="assets/images/Youtube.svg" class="img-fluid" alt=""></a></li>
+                        <li><a href="void:;"><img src="assets/images/WhatsApp.svg" class="img-fluid" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+                (02) End banner section 
+    ============================================== -->
+
+
+    <!-- =============================================
+            (03) Start course module section 
+    ============================================== -->
+    <section class="course" id="course">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h3><span>*</span> Course Modules <span>*</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5">
+                    <div class="course-img-left">
+                        <img src="assets/images/course-modules-img.png" class="img-fluid" alt="">
+
+                        <p>
+                            This course is for students who want to have solid foundations in letter design, develop
+                            their work with lettering and have an impact in the creative industry. Graduates include
+                            illustrators, letterers, freelancers, artists, designers, type designers and art directors.
+                            <a href="void:;">Learn more about Rakell Simon →</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="course-module">
+                        <div id="accordion">
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="headingOne">
+
+                                    <button class="btn btn-block text-left caouse-module-card-open"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        1. Introduction
+                                    </button>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="heading2">
+
+                                    <button class="btn btn-block text-left collapsed" data-toggle="collapse"
+                                        data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        2. Doodles
+                                    </button>
+                                </div>
+
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="heading3">
+
+                                    <button class="btn btn-block text-left collapsed" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                        3. Brush Caligraphy & Lettering
+                                    </button>
+                                </div>
+
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="heading4">
+
+                                    <button class="btn btn-block text-left collapsed" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                        4. Lettering Process
+                                    </button>
+                                </div>
+
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="heading5">
+
+                                    <button class="btn btn-block text-left collapsed" data-toggle="collapse"
+                                        data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                        5. Brush Excercise + Word
+                                    </button>
+                                </div>
+
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                            <!-- card -->
+                            <div class="card caouse-module-card">
+                                <div class="card-header" id="heading6">
+
+                                    <button class="btn btn-block text-left collapsed" data-toggle="collapse"
+                                        data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                        6. Brush Alphabet
+                                    </button>
+                                </div>
+
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum mattis id
+                                            nec, a. Eros suscipit justo, augue sem
+                                            fermentum nunc, semper amet. Consectetur sed ut cursus sit sed imperdiet id
+                                            adipiscing. Non mauris, eget nulla viverra
+                                            vitae turpis. Leo in eu posuere ipsum netus convallis. Nunc porttitor hac
+                                            vulputate a vitae ultricies.</p>
+
+                                        <p>Ac orci mattis pellentesque feugiat. Arcu suspendisse facilisis sit sapien
+                                            suspendisse mauris, nunc nibh egestas. Eget
+                                            faucibus arcu amet mattis molestie congue turpis. Venenatis mauris, nulla
+                                            morbi in donec eleifend dictum. Ultricies
+                                            risus in congue enim. Nisi sed at viverra volutpat enim tellus.</p>
+
+                                        <a href="void:;">Learn more →</a>
+                                    </div>
+                                </div>
+                            </div><!-- card -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =============================================
+            (03) End course module section 
+    ============================================== -->
+
+
+    <!-- =============================================
+        (04) Start student feedback section 
+    ============================================== -->
+    <section class="student-feedback">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h3><span>*</span> What Students Say <span>*</span></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card feedback-card">
+                        <img src="assets/images/student-1.png" class="img-fluid" alt="">
+                        <p>I just loved it, because I don't have a printer at home! And everything that is sold now is
+                            only in PDF!!! Please always
+                            make materials like this!!! And your kit has a very good price!!! Have good luck in your
+                            venture!</p>
+                        <h4>Ana Paula Silva</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card feedback-card">
+                        <img src="assets/images/student-2.png" class="img-fluid" alt="">
+                        <p>I am very grateful that you have provided me with a learning that I intend to take for life ,
+                            no doubt lettering is a
+                            therapy I was in need of, when you said today it helped you in a difficult time, I thought:
+                            is it really good? And when
+                            I started doing it and when I arrived and I was training I realized that it really helps.
+                        </p>
+                        <h4>Jackelyni</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card feedback-card">
+                        <img src="assets/images/student-3.png" class="img-fluid" alt="">
+                        <p>And her course was the turning point for me, I had already bought expensive courses and I had
+                            no success. Now I feel
+                            very safe
+                            Thank you I know I need to train a lot.</p>
+                        <h4>Moema Brunes</h4>
+                    </div>
+                </div>
+
+                <!-- more -->
+                <div class="col-lg-12 text-center">
+                    <a href="void:;" class="btn-more-feedback">Read more testimonials →</a>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <form class="feedback-section-enroll-form myform" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScpfsy-zTkDt3JpDJNFy1BNEf9-YooRJlyEluy-mDXx5Mq-Og/formResponse">
+                        <div class="feedback-section-enroll-form-input">
+                            <input type="email" name="entry.1873207277" class="form-control" placeholder="Type your email to enrol now...">
+                            <button type="submit" class="arrow btn banner-form-submit"><i class="icofont-long-arrow-right"></i></button>
+                        </div>
+                        <button type="submit" class="btn btn-default">Talk to me</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/images/feedback-enroll.png" class="img-fluid mx-auto d-table" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================================
+        (04) End student feedback section 
+    ============================================== -->
+
+
+    <!-- =============================================
+                (05) Start works section 
+    ============================================== -->
+
+    <section class="works">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <div class="text-center">
+                            <h3><span>*</span> You Will Create <span>*</span></h3>
+                        </div>
+                        <p>See below only 1% of my student's work and what they are capable of doing. You will create to
+                            your heart's content...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-4.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-5.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="work-card">
+                        <img src="assets/images/work-6.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- more -->
+                <div class="col-lg-12 text-center">
+                    <a href="void:;" class="btn-more-work">See more work →</a>
+                </div>
+                <!-- more -->
+                <div class="col-lg-12 text-center mt-5">
+                    <a href="void:;" data-toggle="modal" data-target="#joinModal" class="btn btn-default">Join now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+

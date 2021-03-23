@@ -1,0 +1,48 @@
+<footer>
+   <div class="footer-area clearfix pb-5 ">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 mx-auto">
+               <div class="footer-top">
+                  {{#if @labs.subscribers}}
+                  <div class="footer-newletter-area pb-5">
+                     <section class="gh-subscribe">
+                        <h3 class="gh-subscribe-title">Subscribe to {{@site.title}}</h3>
+                        <p class=" ">Get the latest posts delivered right to your inbox.</p>
+                        {{subscribe_form
+						  form_class="gh-signin"
+						  form_id="gh-subs-form"
+						  
+						  button_id="sinju-newsletter-btn"
+						  placeholder="Your email address"
+						  autofocus="true"
+						}}
+                        <span class="gh-subscribe-rss">or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{{@site.url}}/rss/">via RSS</a> with Feedly!</span>
+                     </section>
+                  </div>
+                  {{/if}}
+                  <div class="social-icon d-flex justify-content-center">
+                     <ul class="list-inline">
+                        <li class="list-inline-item facebook"><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+                        <li class="list-inline-item twitter"><a href="#"><i class="fa fa-twitter"></i>Instagram</a></li>
+                        <li class="list-inline-item instagram"><a href="#"><i class="fa fa-instagram"></i>Twitter</a></li>
+                        <li class="list-inline-item pinterest"><a href="#"><i class="fa fa-pinterest"></i>pinterest</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <div class="footer-bottom text-center">
+                  <div class="bottom-text pt-4">
+                    <p> &copy; {{date format="YYYY"}} {{@site.title}} | 
+                  <span>{{t "Developed by"}} <a target="_blank" href="https://themeix.com">{{t "Themeix"}}</a> &amp; {{t "Published with"}} <a target="_blank" href="https://ghost.org">{{t "Ghost"}}</a></span>
+               </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>

@@ -1,0 +1,26 @@
+{{!< default}}
+<main class="main-content-area section-padding-bottom" >
+   <section class="banner-area">
+      <div class="container">
+         {{> "slider"}}
+      </div>
+   </section>
+   <section class="blog-area blog-variation zigzag-loop">
+      <div class="container infinite-scroll">
+         {{#foreach posts visibility="all"}}
+            {{#unless featured}}
+            <div class="row post-style1 infinite-post {{post_class}}" data-aos="fade-up">
+               {{> "post_loop"}}
+            </div>
+            {{/unless}}
+         {{/foreach}}
+      </div>
+      <div class="row">
+         <div class="col">
+            <div class="btn-load text-center">
+               {{pagination}}
+            </div>
+         </div>
+      </div>
+   </section>
+</main>

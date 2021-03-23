@@ -1,0 +1,42 @@
+{{!< default}}
+  {{> "page_header"}}
+      <main class="main-content-area section-padding-bottom clearfix minus-30">
+         <section class="author-area">
+            <div class="container">
+               <div class="row">
+			   {{#get "authors" include="tags,authors,count.posts"}}
+			    {{#foreach authors}}
+					<div class="col-md-6">
+						<div class="authors" data-aos="fade-up">
+							{{#if profile_image}}
+							<div class="author-image">
+							   <a href="{{url}}"><img src="{{profile_image}}" alt="{{name}}" /></a>
+							</div>
+							{{else}}
+							<div class="no-author-image-available"></div>		
+							{{/if}}
+							<div class="details">
+							   <span>{{plural count.posts empty=(t "No Posts ") singular=(t '% Posts') plural=(t '% Posts')}}</span>
+							   <h3 class="heading-3"><a href="{{url}}">{{name}}</a></h3>
+							   <nav class="social-icon">
+								  <ul class="list-inline">
+									{{#if website}}
+									 <li class="list-inline-item"><a href="{{website}}"><i class="fa fa-globe"></i></a></li>
+									 {{/if}}
+									{{#if twitter}}
+									 <li class="list-inline-item"><a href="{{twitter_url}}"><i class="fa fa-twitter"></i></a></li>
+									{{/if}}
+									{{#if facebook}}
+									 <li class="list-inline-item"><a href="{{facebook_url}}"><i class="fa fa-facebook"></i></a></li>
+									{{/if}}
+									</ul>
+							   </nav>
+							</div>
+						</div>
+					</div>
+				{{/foreach}}
+				{{/get}}
+            </div>
+        </div>
+    </section>
+</main>
